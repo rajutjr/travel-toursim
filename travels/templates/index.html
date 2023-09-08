@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-3">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TT Application</title>
+</head>
+<body>
+    <h1>  Application</h1>
+    <hr>
+    {% if result %}
+        <h1>name is {{result}}</h1>
+    {% endif %}
+
+    <form action="" method="POST">
+        {% csrf_token %}
+        year : <input type="number" name="year" required><br>
+        quarter : <input type="number" name="quarter" required><br>
+        market : <input type="number" name="market" required><br>
+        dur_stay : <input type="number" name="dur_stay" required><br>
+        mode : <input type="number" name="mode" required><br>
+        purpose : <input type="number" name="purpose" required><br>
+        visits : <input type="number" name="visits" required><br>
+        
+        <input type="submit">
+    </form>
+</body>
+</html>
